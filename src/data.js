@@ -249,7 +249,6 @@ export default [
   {
     name: 'Rice, Brown',
     slug: 'rice-brown',
-    depressure: 'Natural, 10 minutes',
     cooking: {
       time: 4,
       type: 'minutes on high pressure'
@@ -273,7 +272,6 @@ export default [
   {
     name: 'Boiled Peanuts',
     slug: 'boiled-peanuts',
-    depressure: 'Natural, 10 minutes',
     cooking: {
       time: 90,
       type: 'minutes on high pressure'
