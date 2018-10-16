@@ -1,0 +1,19 @@
+body {
+  font-family: $font-primary;
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  font-size: 1.1rem;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.accent-heading {
+  font-family: $font-accent;
+}
+
+a {
+  transition: all 0.2s;
+}

@@ -1,0 +1,71 @@
+.prefooter {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  background: $primary-color;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  margin-bottom: -2rem;
+  color: white;
+
+  a {
+    color: lighten($accent-color, 25%);
+    text-decoration: none;
+    border-bottom: 1px solid rgba($accent-color, 0.3);
+
+    &:hover {
+      color: white;
+      border-bottom-color: rgba(white, 0.5);
+    }
+  }
+
+  &__header {
+    font-family: $font-accent;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0px rgba(black, 0.2);
+  }
+
+  &__link-desc {
+    font-size: 0.8rem;
+  }
+
+  &__links-list {
+    list-style: none;
+    padding-left: 0.5rem;
+
+    li::before {
+      content: '\00bb';
+      padding-right: 0.5rem;
+      color: $accent-color;
+    }
+  }
+
+  &::before {
+    content: '';
+    height: 1rem;
+    width: 100%;
+    background: $accent-color;
+    transform: rotate(-0.5deg);
+    display: block;
+    position: relative;
+    z-index: -999;
+    top: -2.5rem;
+  }
+
+  div[class*='col-'] {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .prefooter {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    &__header {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      font-size: 1.7rem;
+    }
+    div[class*='col-'] {
+      padding: 0 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

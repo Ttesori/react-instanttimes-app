@@ -1,0 +1,15 @@
+.CircularProgressbar .CircularProgressbar-text {
+  fill: $primary-color;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: $primary-color;
+}
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: $neutral-light;
+}
+
+.CircularProgressbar {
+  margin-bottom: 0.5rem;
+  max-width: 200px;
+}
